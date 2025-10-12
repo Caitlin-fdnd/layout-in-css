@@ -6,7 +6,38 @@
     <title>Basic Layout 6</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
+ 
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 8px;
+}
+    
+header {
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+}
+
+nav {
+    grid-row: span 8 / span 8;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+main {
+    grid-column: span 3 / span 3;
+    grid-row: span 8 / span 8;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+footer {
+    grid-row: span 10 / span 10;
+    grid-column-start: 5;
+    grid-row-start: 1;
+}
+        
     </style>
   </head>
   <body id="basic-layout-6">
